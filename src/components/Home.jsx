@@ -69,7 +69,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/cow-01.gif" width="16" height="16"/>
                             </td>
                             <td>
-                                <a href="x" target="frame">about me</a>
+                                <a href="x" target="frame">Sobre mi</a>
                             </td>
                             </tr>
                             <tr>
