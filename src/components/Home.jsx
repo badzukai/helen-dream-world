@@ -1,3 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/no-distracting-elements */
+/* eslint-disable jsx-a11y/iframe-has-title */
+/* eslint-disable jsx-a11y/alt-text */
 import "../css/home.css"
 
 export default function Home () {
@@ -39,9 +43,9 @@ export default function Home () {
                 </center>
                 hits..... <script type="text/javascript" src="//counter.websiteout.net/js/20/0/13983/0"></script><br/>
 
-                mood <a href="http://www.imood.com/users/cinni" target="_blank"><img src="http://moods.imood.com/display/uname-cinni/fg-6e45ff/bg-bdecff/imood.gif" className="imageBorder"/></a><br/>
+                mood <a href="http://www.imood.com/users/cinni" target="_blank" rel="noreferrer"><img src="http://moods.imood.com/display/uname-cinni/fg-6e45ff/bg-bdecff/imood.gif" className="imageBorder"/></a><br/>
 
-                rss...... <a href="https://cinni.net/rss.xml" target="_blank"><img src="https://cinni.net/images/rssfeed.png" align="top"/>  <span className="fontS10px">★彡</span></a><br/> 
+                rss...... <a href="https://cinni.net/rss.xml" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/rssfeed.png" align="top"/>  <span className="fontS10px">★彡</span></a><br/> 
 
                 {/* <center>
                     <button className="toggle" onClick={toggleTheme()}>change theme</button>
@@ -51,14 +55,14 @@ export default function Home () {
                 <center>
                     <a href="https://www.furcadia.com/"><img src="https://www.furcadia.com/services/online/myonlinestatus.php4?username=cinni&online_url=https://cinni.net/images/furc/furc-on.png&offline_url=https://cinni.net/images/furc/furc-off.png" alt="Furcadia!" border={0} /></a>
 
-                       <a href="https://99gifshop.neocities.org/" target="_blank"><img src="https://99gifshop.neocities.org/img/88x31.4.png" className="button"/></a>
+                       <a href="https://99gifshop.neocities.org/" target="_blank" rel="noreferrer"><img src="https://99gifshop.neocities.org/img/88x31.4.png" className="button"/></a>
 
-                       <a href="https://entranceorexit.net/" target="_blank"><img src="https://entranceorexit.net/img/eoe_button.png" className="button"/></a>
+                       <a href="https://entranceorexit.net/" target="_blank" rel="noreferrer"><img src="https://entranceorexit.net/img/eoe_button.png" className="button"/></a>
 
-                       <a href="https://forum.melonking.net/" target="_blank"><img src="https://forum.melonking.net/images/MELONLAND-FORUM.GIF" className="button"/></a>
+                       <a href="https://forum.melonking.net/" target="_blank" rel="noreferrer"><img src="https://forum.melonking.net/images/MELONLAND-FORUM.GIF" className="button"/></a>
                 </center>
             </div>
-            <iframe src="iframehome.html"  width="565" height="530" frameborder="0" scrolling="yes" name="frame" id="mainframe"></iframe>
+            <iframe src="https://helendreamworld-d3l5.vercel.app"  width="565" height="530" frameborder="0" scrolling="yes" name="frame" id="mainframe"></iframe>
             <div className="me">
                 <div>
                     <span className="fontS12pxLineHeight12">✧ ✧ ♡</span> me <span className="fontS12pxLineHeight12" >♡ ✧ ✧ </span></div>
@@ -133,7 +137,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/youvegotmail.gif"/> 
                             </td>
                             <td>
-                                <a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-36688-af" target="_blank">guestbook</a>
+                                <a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-36688-af" target="_blank" rel="noreferrer">guestbook</a>
                             </td>
                             </tr>
                             <tr>
@@ -141,7 +145,7 @@ export default function Home () {
                             <img src="https://cinni.net/images/kofi.png"/>
                             </td>
                             <td>
-                            <a href="https://ko-fi.com/cinnii" target="_blank"> ko-fi</a>
+                            <a href="https://ko-fi.com/cinnii" target="_blank" rel="noreferrer"> ko-fi</a>
                             </td>
                             </tr>
                         </tbody>
@@ -158,7 +162,7 @@ export default function Home () {
                                     <img src="https://archive.cinni.net/sites/icon/kintanti-icon-pink-pencil2.png"/>
                                 </td>
                                 <td>
-                                    <a href="https://oekaki.cinni.net/" target="_blank"> oekaki board </a>
+                                    <a href="https://oekaki.cinni.net/" target="_blank" rel="noreferrer"> oekaki board </a>
                                 </td>
                             </tr>
                             <tr>
@@ -166,7 +170,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://archive.cinni.net/" target="_blank">cutie net archive</a>
+                                    <a href="https://archive.cinni.net/" target="_blank" rel="noreferrer">cutie net archive</a>
                                 </td>
                             </tr>
                             <tr>
@@ -174,7 +178,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/food/tini-strawberry-peep.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://directory.cinni.net/" target="_blank">ichigo directory</a>
+                                    <a href="https://directory.cinni.net/" target="_blank" rel="noreferrer">ichigo directory</a>
                                 </td>
                             </tr>
                             <tr>
@@ -278,36 +282,36 @@ export default function Home () {
                     </table>
             </div>
             <div className="dream">
-                <a href="https://cinni.net/dream/x/" target="_blank">
+                <a href="https://cinni.net/dream/x/" target="_blank" rel="noreferrer">
                     <img src="https://cinni.net/images/planetheart.gif"/><img src="https://cinni.net/images/dreamrealm_banner.png"/>
                     <img src="https://99gifshop.neocities.org/items/5/drktorch.gif" className="margintop50px" /><img src="https://cinni.net/images/dreamrealm_banner.png" className="marginbottom20px" />
                 </a>
             </div>
             <div className="music">
-                <a href="https://cinni.net/sonic_blue/" target="_blank">
+                <a href="https://cinni.net/sonic_blue/" target="_blank" rel="noreferrer">
                     <img src="https://cinni.net/images/web/ani_gldn-sun_sml-slwr.gif"/><br/><img src="https://cinni.net/images/sonicblue_banner.png" className="positionrelativetop-15pxleft-15pxcontentvar--music" />
                     <img src="https://99gifshop.neocities.org/items/3/moon24twirling.gif" className="margintop-15px"/><br/><img src="https://cinni.net/images/sonicblue_banner.png"  className="positionrelativetop-10pxleft-15pxcontentvarmusic" />
                 </a>
             </div>
             <div className="game">
-              <a href="https://cinni.net/games/home.html" target="_blank"><img src="https://cinni.net/images/mygames_banner.png"/></a>
+              <a href="https://cinni.net/games/home.html" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/mygames_banner.png"/></a>
             </div>
             <div className="cliques">
             {/* onMouseOver={this.stop()} onMouseOut={this.start()} */}
               <marquee scrollamount="2" >
-              <a href="https://web.archive.org/web/20030707203016/http://celestial-sodapop.net/sanrio/" target="_blank"><img src="https://cinni.net/images/web/cliq/sanrio1.gif" alt="i <3 sanrio"/></a> 
-                       <a href="https://web.archive.org/web/20031204225736/http://tifa.net/strawberry/" target="_blank"><img src="https://cinni.net/images/web/cliq/straw5.gif" alt="strawberry adoption"/></a> 
-                       <a href="https://web.archive.org/web/20030603175727/http://glitter-pop.net/pixel/" target="_blank"><img src="https://cinni.net/images/web/cliq/pixellove.gif"/></a> 
-                       <a href="https://web.archive.org/web/20030603175727/http://www.angelfire.com/goth2/deadartistsorg/" target="_blank"><img src="https://cinni.net/images/web/cliq/artclique.gif"/></a> 
-                       <a href="https://web.archive.org/web/20030603175727/http://www.pixelclique.cjb.net/" target="_blank"><img src="https://cinni.net/images/web/cliq/pixelblue3.gif"/></a> 
-                       <a href="https://web.archive.org/web/20030603175727/http://withoutyou.nu/clique" target="_blank"><img src="https://cinni.net/images/web/cliq/internet4.gif"/></a> 
+              <a href="https://web.archive.org/web/20030707203016/http://celestial-sodapop.net/sanrio/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/sanrio1.gif" alt="i <3 sanrio"/></a> 
+                       <a href="https://web.archive.org/web/20031204225736/http://tifa.net/strawberry/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/straw5.gif" alt="strawberry adoption"/></a> 
+                       <a href="https://web.archive.org/web/20030603175727/http://glitter-pop.net/pixel/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/pixellove.gif"/></a> 
+                       <a href="https://web.archive.org/web/20030603175727/http://www.angelfire.com/goth2/deadartistsorg/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/artclique.gif"/></a> 
+                       <a href="https://web.archive.org/web/20030603175727/http://www.pixelclique.cjb.net/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/pixelblue3.gif"/></a> 
+                       <a href="https://web.archive.org/web/20030603175727/http://withoutyou.nu/clique" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/internet4.gif"/></a> 
                        <img src="/images/web/cliq/minivalley.gif"/> 
-                       <a href="http://web.archive.org/web/20040723083110/http://www.bleary-eyed.net/kitty/" target="_blank"><img src="https://cinni.net/images/web/cliq/kitty.gif"/></a> 
-                       <a href="https://web.archive.org/web/20070210182600/http://towemy.com/pixels/" target="_blank"><img src="https://web.archive.org/web/20070303035335im_/http://www.towemy.com/bild/sticker/pagespinner.gif"/></a>
-                       <a href="https://kowakawaii.moe/" target="_blank"><img src="https://cinni.net/images/web/cliq/scarycute.png" title="I'm scary cute!"/></a> 
-                       <a href="https://dust.kuchiki.net/" target="_blank"><img src="https://cinni.net/images/web/cliq/a2_2.gif" title="celestial divine // taurus"/></a> 
-                       <a href="https://dust.kuchiki.net/" target="_blank"><img src="https://cinni.net/images/web/cliq/b12.gif" title="i love anime // yuri"/></a> 
-                       <a href="https://dust.kuchiki.net/" target="_blank"><img src="https://cinni.net/images/web/cliq/c4.gif" title="catastic!!"/></a>
+                       <a href="http://web.archive.org/web/20040723083110/http://www.bleary-eyed.net/kitty/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/kitty.gif"/></a> 
+                       <a href="https://web.archive.org/web/20070210182600/http://towemy.com/pixels/" target="_blank" rel="noreferrer"><img src="https://web.archive.org/web/20070303035335im_/http://www.towemy.com/bild/sticker/pagespinner.gif"/></a>
+                       <a href="https://kowakawaii.moe/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/scarycute.png" title="I'm scary cute!"/></a> 
+                       <a href="https://dust.kuchiki.net/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/a2_2.gif" title="celestial divine // taurus"/></a> 
+                       <a href="https://dust.kuchiki.net/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/b12.gif" title="i love anime // yuri"/></a> 
+                       <a href="https://dust.kuchiki.net/" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/web/cliq/c4.gif" title="catastic!!"/></a>
               </marquee>
             </div>
             <div className="yw-widget-full yw-raw" data-yw-url="https://cinni.neocities.org/"></div>
