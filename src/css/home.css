@@ -612,6 +612,8 @@
     left: -15px;
     content: var(--music);
   }
+ 
+  
   .mainContent{
     display: none;
   }

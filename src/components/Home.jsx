@@ -5,7 +5,7 @@ export default function Home () {
     // <html>
     //     <head>
     //         <meta charset="UTF-8"/>
-    //         <title>♡ cinni's dream home ♡ </title>
+    //         <title>♡ helen's dream home ♡ </title>
     //         <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
     //         <link rel="shortcut icon" href="https://cinni.net/shrine/ace/0kirara_m-doji.sakura.ne.jp.gif" type="image/x-icon"/>
     //         <script src="https://yesterwebring.neocities.org/script.js"></script>
@@ -17,7 +17,7 @@ export default function Home () {
         <div className="index">
           <div className="layout">
             <a href="https://cinni.net/" className="header"></a>
-            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to cinni's dream home . . . we hope you enjoy your stay! . . .<img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
+            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream home . . . disfrute su estadía! . . .<img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
             <div className="clock">
                 <script language="JavaScript">
                    document.write('<iframe src="http://web.archive.org/web/20071011105905/http://bubbles.sweet.free.fr'
@@ -58,7 +58,7 @@ export default function Home () {
                        <a href="https://forum.melonking.net/" target="_blank"><img src="https://forum.melonking.net/images/MELONLAND-FORUM.GIF" className="button"/></a>
                 </center>
             </div>
-            <iframe src="https://cinni.net/home.html" width="565" height="530" frameborder="0" scrolling="yes" name="frame" id="mainframe"></iframe>
+            <iframe src="iframehome.html"  width="565" height="530" frameborder="0" scrolling="yes" name="frame" id="mainframe"></iframe>
             <div className="me">
                 <div>
                     <span className="fontS12pxLineHeight12">✧ ✧ ♡</span> me <span className="fontS12pxLineHeight12" >♡ ✧ ✧ </span></div>
@@ -69,7 +69,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/cow-01.gif" width="16" height="16"/>
                             </td>
                             <td>
-                                <a href="x" target="frame">Sobre mi</a>
+                                <a href="x" target="frame">sobre mí</a>
                             </td>
                             </tr>
                             <tr>
@@ -77,7 +77,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/gbook.gif"/>
                             </td>
                             <td>
-                                <a href="x" target="frame">diary</a>
+                                <a href="x" target="frame">blog</a>
                             </td>
                             </tr>
                             <tr>

@@ -1,0 +1,578 @@
+:root{
+  --bg:url("https://cinni.net/images/cloudysky2_indexed3_stars.png");
+  --layout:url("https://cinni.net/images/layout4.0.png");
+  --rainbow:url("https://cinni.net/images/rainbow_blurry2.png");
+  --webring:url("https://cinni.net/images/web/bg/webring_bg2.png");
+  --l1:url("https://cinni.net/images/site/layoutcorner-11.png");
+  --l2:url("https://cinni.net/images/layout4.0_corner1.png");
+  --l3:url("https://cinni.net/test/potd.png");
+  --l4:url("https://cinni.net/test/sitestats.png");
+  --l5:url("https://cinni.net/test/chains-div.png");
+  --dream:url("https://cinni.net/images/dreamrealm_banner.png");
+  --music:url("https://cinni.net/images/sonicblue_banner.png");
+  --games:url("https://cinni.net/images/mygames_banner.png");
+  --text:#6e45ff;
+  --link:#000;
+  --selection:#ffcdef;
+  --accent:#bdecff;
+  --marquee:#6e45ff;
+  --line:#d6ecf3;
+  --bgrepeat:no-repeat;
+  --bgsize: 110% 100%;
+  --pagedoll:none;
+  --marquee-color:#6e45ff;
+    --filter:brightness(1);
+    --link-color:black;
+--text-color:#6e45ff;
+--title-bg:#bdecff;
+--span-bg:linear-gradient(90deg, rgba(214,236,243,0) 0%, rgba(255,213,208,1) 15%, rgba(252,255,196,1) 30%, rgba(199,255,196,1) 50%, rgba(196,255,251,1) 70%, rgba(248,215,255,1) 85%, rgba(214,236,243,0) 100%);
+--rainbowtop:-2020px;
+--rainbowleft:1037px;
+--rainbowsize:120% 100%;
+--rainbowpos:-90px;
+--bgcolor:#d6ecf3;
+--welcomebanner:url('https://cinni.net/images/welcome-dreamland.png');
+--welcomeimg:url('https://cinni.net/images/doll/e089.gif');
+--welcomeimgmargin:1px 15px;
+--h1gradient: linear-gradient(90deg, rgba(214,236,243,0) 0%, rgba(199,255,196,1) 25%, rgba(199,255,196,1) 75%, rgba(214,236,243,0) 100%);
+}
+
+/*
+[data-theme="dark"] {
+      --bg:url("https://cinni.net/images/cloudsky-dark.png");
+  --layout:url("https://cinni.net/images/layout4.0-dark.png");
+  --rainbow:url("https://cinni.net/images/rainbow_blurry2-dark.png");
+  --webring:url("https://cinni.net/images/webring_bg2-dark.png");
+  --l1:url("https://cinni.net/images/site/layoutcorner-11-dark.png");
+  --l2:url("https://cinni.net/images/layout4.0_corner1.png");
+  --l3:url("https://cinni.net/images/site/potd-sign-dark.png");
+  --l4:url("https://cinni.net/images/site/stats-dark.png");
+  --l5:url("https://cinni.net/images/site/chains-div-dark.png");
+  --dream:url("https://cinni.net/images/site/dream-dark.png");
+  --music:url("https://cinni.net/images/site/music-dark.png");
+  --games:url("https://cinni.net/images/site/mygames_banner-dark.png");
+  --text:#ddd;
+  --link:#ffc9dd;
+  --selection:#5310ff;
+  --accent:#5310ff;
+  --marquee:#6e45ff;
+  --line:#432f46;
+}
+*/
+
+[data-theme="dark"] {
+      --bg:url("https://cinni.net/sonic_blue/space_bg.2.gif");
+  --layout:url("https://cinni.net/images/site/halloween-test.png");
+  --rainbow:url("https://test.cinni.net/cinni/new_fireanim.gif");
+  --rainbow:url("https://99gifshop.neocities.org/items/3/fire.gif");
+  --webring:url("https://cinni.net/images/site/webring-halloween.png");
+  --l1:url("https://test.cinni.net/cinni/layoutcorner-11-halloween.png");
+  --l2:url("https://cinni.net/images/layout4.0_corner1.png");
+  --l3:url("https://cinni.net/images/site/potd-sign-halloween.png");
+  --l4:url("https://cinni.net/images/site/stats-halloween.png");
+  --l5:url("https://cinni.net/images/site/chains-div-halloween.png");
+  --dream:url("https://cinni.net/images/site/dream-halloween.png");
+  --music:url("https://cinni.net/images/site/music-halloween.png");
+  --games:url("https://cinni.net/images/site/mygames_banner-halloween.png");
+  --text:#b582ff;
+  --link:#ff8efd;
+  --selection:#5310ff;
+  --accent:#280f36;
+  --marquee:#ff8efd;
+    --line:#000;
+  --filter:brightness(0.9);
+  --span-bg:linear-gradient(90deg, rgba(235,100,131,0) 3%, rgba(235,100,131,1) 9%, rgba(233,143,112,1) 23%, rgba(204,154,126,1) 33%, rgba(168,192,154,1) 52%, rgba(178,155,219,1) 69%, rgba(199,105,192,1) 88%, rgba(202,152,130,0) 97%);
+ --bgrepeat:repeat;
+  --bgsize:auto;
+  --pagedoll:display;
+  --link-color:#ffc9dd;
+--text-color:#ddd;
+--title-bg:#280f36;
+--marquee-bg:#5310ff;
+--rainbowrender:pixelated;
+--rainbowtop:-2120px;
+--rainbowleft:1050px;
+--rainbowsize:100% 100%;
+--rainbowpos:center;
+--bgcolor:#000;
+--welcomebanner:url('https://cinni.net/images/site/welcome-heck.png');
+--welcomeimg:url('https://web.archive.org/web/20091021111606/http://www.geocities.com/bluedevils1us2002/angel2devil.gif');
+--welcomeimgmargin:0;
+--h1gradient: linear-gradient(90deg, rgba(214,236,243,0) 0%, rgba(68, 23, 98,1) 25%, rgba(68, 23, 98,1) 75%, rgba(214,236,243,0) 100%);
+}
+
+
+img{
+    filter:var(--filter);
+}
+
+    @font-face{
+      font-family: 'pixelverdana';
+      src: url(https://cinni.net/fonts/pixelfjverdana12pt.woff);
+      }
+      
+     @font-face{
+     font-family: 'basiic';
+      src: url(https://cinni.net/fonts/basiic.ttf);
+    }
+
+
+*{
+  box-sizing: border-box;
+}
+::selection{
+  background:var(--selection);
+  color:var(--text);
+}
+body{
+  /*background:var(--bg);*/
+  color:var(--text);
+  scrollbar-color: #8f38ff #d6ecf3;
+  scrollbar-width: thin;
+    font-family: 'basiic';
+}
+
+.index{
+  background:var(--bg);
+  background-position: center;
+  background-position:-50px;
+  /* Center and scale the image nicely */
+  background-repeat: var(--bgrepeat);
+  background-attachment: fixed;
+  background-size: var(--bgsize);
+  color:var(--text);
+  scrollbar-color: #8f38ff #d6ecf3;
+  scrollbar-width: thin;
+  padding:0;
+  margin:0;
+}
+a{
+  color:var(--link);
+  font-weight:bold;
+  text-decoration:none;
+}/*
+a:hover{
+    color:var(--text);
+    background:var(--accent);
+}*/
+
+.header,.marquee,.clock,.potd,.stats,.side,iframe,.me,.you,.dream,.music,.game,.cliques,.rainbow,.yw-widget-full,.l1,.l2,.l3,.l4,.l5,.l6{
+  position:relative;
+}
+
+.layout{
+  background:var(--layout);
+  background-repeat:no-repeat;
+  background-position:65px;
+  width:1330px;
+  height:740px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.header{
+  top:50px;
+  left:137px;
+  padding:40px 450px;
+}
+
+.marquee{
+  width:599px;
+  top:93px;
+  left:308px;
+  color:var(--marquee);
+}
+.clock{
+  top:101px;
+  left:246px;
+  height:40px;
+  width:100px;
+  z-index:2;
+}
+.potd{
+  top:131px;
+  left:175px;
+  width:135px;
+  height:135px;
+  padding:7px;
+}
+.stats{
+  top:176px;
+  left:174px;
+  width:135px;
+  height:100px;
+  padding:10px 5px;
+  text-align:justify;
+  font-size:12px;
+        font-family: 'pixelverdana';
+        font-size:6px;
+        letter-spacing:1px;
+        line-height:15px;
+}
+.side{
+  top:205px;
+  left:175px;
+  width:135px;
+  height:185px;
+  padding:10px;
+}
+.side img{
+  margin:5px;
+}
+#mainframe{
+  top:-351px;
+  left:322px;
+    scrollbar-color: #8f38ff #d6ecf3;
+  scrollbar-width: thin;
+}
+.me table, .you table{
+border-collapse: collapse;
+border-spacing: 0;
+  font-size:6px;
+  margin:0 5px;
+}
+.index td:nth-child(2){
+  font-size:6px;
+        font-family: 'pixelverdana';
+        letter-spacing:2px;
+}
+.index td:nth-child(2) a{
+    font-weight:normal;
+    text-shadow:1px 1px 3px var(--line);
+}
+.me{
+top: -876px;
+left: 902px;
+width: 159px;
+height: 215px;
+}
+.me div, .you div{
+  text-align:center;
+  width:100%;
+  margin:0 auto;
+  background:var(--accent);
+          font-family: 'pixelverdana';
+        font-size:6px;
+        letter-spacing:1px;
+        height:20px;
+}
+.me a:hover, .you a:hover{
+    font-style:italic;
+    background:var(--selection);
+    color:var(--text);
+}
+
+
+.you{
+top: -839px;
+left: 902px;
+width: 159px;
+  height:303px;
+  /*overflow-y:scroll;*/
+}
+
+
+button{
+font-family: 'pixelverdana';
+font-size: 6px;
+letter-spacing: 2px;
+padding: 0 2px;
+margin: 0;
+background: var(--selection);
+color: var(--text);
+border: 1px dotted;
+}
+button:hover{
+    background:var(--text);
+    color:var(--selection);
+}
+
+.dream{
+top: -1425px;
+left: 1099px;
+  width:235px;
+  height:100px;
+}
+.dream img:nth-child(2){
+    content:var(--dream);
+}
+
+.music{
+top: -1460px;
+left: 1157px;
+  width:150px;
+  height:150px;
+  text-align:center;
+}
+.music img:nth-child(2){
+    content:var(--music);
+    z-index:2;
+    position:relative;
+    top:-15px;
+    left:-15px;
+}
+
+.game{
+top: -1510px;
+left: 1075px;
+  width:150px;
+  height:150px;
+}
+.game img{
+    content:var(--games);
+}
+.cliques{
+top: -1480px;
+left: 1091px;
+width: 190px;
+height: 40px;
+padding: 6px 2px;
+}
+.yw-widget-full{
+  top:-1455px;
+  left:1091px;
+  background:var(--webring);
+  height:175px;
+  width:190px;
+  text-align:center;
+  font-size:12px;
+  border:3px double;
+  padding:5px;
+  font-family:'pixelverdana';
+  font-size:6px;
+  letter-spacing:2px;
+  padding-top:10px;
+}
+.yw-widget-full a:hover{
+    font-style:italic;
+    color:var(--text);
+    background:var(--selection);
+}
+.rainbow{
+  background:var(--rainbow);
+  background-position:-90px;
+  background-repeat:no-repeat;
+  background-size:120% 100%;
+  z-index:-1;
+  top:-2020px;
+  left:1037px;
+  width:270px;
+  height:500px;
+  image-rendering: var(--rainbowrender);
+  top:var(--rainbowtop);
+  left:var(--rainbowleft);
+  background-size:var(--rainbowsize);
+  background-position:var(--rainbowpos);
+}
+
+
+.l1{
+  top:-2524px;
+left: 871px;
+width: 200px;
+  height:30px;
+  background:var(--l1);
+  background-repeat:no-repeat;
+}
+.l2{
+  top:-2032px;
+  left:862px;
+  width:40px;
+  height:30px;
+  background:var(--l2);
+  background-repeat:no-repeat;
+}
+.l3{
+  top:-2598px;
+  left:117px;
+  width:235px;
+  height:100px;
+  background:var(--l3);
+  background-repeat:no-repeat;
+}
+.l4{
+top: -2468px;
+left: 147px;
+width: 195px;
+height: 50px;
+  background:var(--l4);
+  background-repeat:no-repeat;
+}
+.l5{
+top: -2496px;
+left: 916px;
+width: 130px;
+height: 35px;
+  background:var(--l5);
+  background-repeat:no-repeat;
+}
+.l6{
+top: -2204px;
+left: 918px;
+width: 130px;
+height: 35px;
+  background:var(--l5);
+  background-repeat:no-repeat;
+}
+
+
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+background: #d6ecf3;
+}
+
+::-webkit-scrollbar-track {
+   background: -webkit-linear-gradient(top, #ffb5cd 2%,#ffcca8 17%,#fff6b7 35%,#daffb7 55%,#aadeff 76%,#cebafc 97%);
+border-radius: 0px;
+width: 0px;
+border: 1px dotted #8f38ff;
+}
+
+/*::-webkit-scrollbar-track-piece {
+  background: -webkit-linear-gradient(top, #ffb5cd 2%,#ffcca8 17%,#fff6b7 35%,#daffb7 55%,#aadeff 76%,#cebafc 97%);
+}*/
+
+::-webkit-scrollbar-thumb {
+background: #d6ecf3;
+border: 1px dotted #8f38ff;
+border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #8f38ff;  
+cursor:url(/emoticon/cursor_default.png), auto;
+}
+
+.pagedoll{
+             display:var(--pagedoll); background:url("https://cinni.net/images/site/halloween-doll.png");
+              width:250px;
+              height:500px;
+              position:absolute;
+              top:200px;
+              left:25px;
+              animation: MoveUpDown 4s linear infinite;
+          }
+          
+          @keyframes MoveUpDown {
+            0%, 100% {
+            top: 200px;
+            }
+            50% {
+            top: 190px;
+            }
+            }
+          
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  column-rule: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#o_5665914{
+  background:none;
+}
+
+.header:hover,.dream:hover,.dream a:hover .music:hover,.game:hover{
+    background:none;
+}
+
+
+.welcomebanner{
+  content:var(--welcomebanner);
+}
+.welcomeimg{
+  content:var(--welcomeimg);
+  margin:var(--welcomeimgmargin);
+}
+
+
+
+
+
+
+
+ @media screen and (max-aspect-ratio:16/9) {
+
+.layout{
+  background-position:65px;
+}
+.header{
+  left:137px;
+}
+.marquee{
+  left:308px;
+}
+.clock{
+  left:246px;
+}
+.potd{
+  left:175px;
+}
+.stats{
+  left:174px;
+}
+.side{
+  left:175px;
+}
+#mainframe{
+  left:322px;
+}
+.me{
+left: 902px;
+}
+.you{
+left: 902px;
+}
+.dream{
+left: 1099px;
+}
+.music{
+left: 1157px;
+}
+.music img:nth-child(2){
+    left:-15px;
+}
+.game{
+left: 1075px;
+}
+.cliques{
+left: 1091px;
+}
+.yw-widget-full{
+  left:1091px;
+}
+.rainbow{
+  left:1037px;
+}
+.l1{
+left: 871px;
+}
+.l2{
+  left:862px;
+}
+.l3{
+  left:117px;
+}
+.l4{
+left: 147px;
+}
+.l5{
+left: 916px;
+}
+.l6{
+left: 918px;
+}
+}
