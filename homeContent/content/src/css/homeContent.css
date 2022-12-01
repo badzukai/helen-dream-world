@@ -1,4 +1,4 @@
-:root {
+root {
     --bg: url("https://cinni.net/images/cloudysky2_indexed3_stars.png");
     --layout: url("https://cinni.net/images/layout4.0.png");
     --rainbow: url("https://cinni.net/images/rainbow_blurry2.png");
@@ -146,7 +146,6 @@ body {
     scrollbar-width: thin;
     padding: 0;
     margin: 0;
-    height: 100%;
 }
 
 a {
@@ -253,7 +252,7 @@ iframe,
 
 #mainframe {
     top: -351px;
-    left: -52px;
+    left: 322px;
     scrollbar-color: #8f38ff #d6ecf3;
     scrollbar-width: thin;
 }
@@ -493,10 +492,11 @@ button:hover {
     border-radius: 0px;
 }
 
- ::-webkit-scrollbar-thumb:hover {
+
+/* ::-webkit-scrollbar-thumb:hover {
     background: #8f38ff;
-    /* cursor:url(/emoticon/cursor_default.png), auto; */
-}
+    cursor: url(/emoticon/cursor_default.png), auto;
+} */
 
 .pagedoll {
     display: var(--pagedoll);
@@ -543,119 +543,189 @@ button:hover {
 }
 
 .welcomebanner {
+    padding: 0;
+    align-content: center;
     content: var(--welcomebanner);
 }
 
 .welcomeimg {
+    align-content: center;
+    float: left;
+    padding: 1px 5px;
     content: var(--welcomeimg);
     margin: var(--welcomeimgmargin);
 }
 
-@media screen and (max-aspect-ratio:16/9) {
-    .layout {
-        background-position: 65px;
-    }
-    .header {
-        left: 137px;
-    }
-    .marquee {
-        left: 308px;
-    }
-    .clock {
-        left: 246px;
-    }
-    .potd {
-        left: 175px;
-    }
-    .stats {
-        left: 174px;
-    }
-    .side {
-        left: 175px;
-    }
-    #mainframe {
-        left: 322px;
-    }
-    .me {
-        left: 902px;
-    }
-    .you {
-        left: 902px;
-    }
-    .dream {
-        left: 1099px;
-    }
-    .music {
-        left: 1157px;
-    }
-    .music img:nth-child(2) {
-        left: -15px;
-    }
-    .game {
-        left: 1075px;
-    }
-    .cliques {
-        left: 1091px;
-    }
-    .yw-widget-full {
-        left: 1091px;
-    }
-    .rainbow {
-        left: 1037px;
-    }
-    .l1 {
-        left: 871px;
-    }
-    .l2 {
-        left: 862px;
-    }
-    .l3 {
-        left: 117px;
-    }
-    .l4 {
-        left: 147px;
-    }
-    .l5 {
-        left: 916px;
-    }
-    .l6 {
-        left: 918px;
-    }
-    .font5px {
-        font-size: 5px;
-    }
-    .imageBorder {
-        border: 1px dotted #6e45ff;
-    }
-    .fontS10px {
-        font-size: 10px;
-    }
-    .fontS12pxLineHeight12 {
-        font-size: 12px;
-        line-height: 12px;
-    }
-    .margintop50px {
-        margin-top: 50px;
-    }
-    .marginbottom20px {
-        margin-bottom: 20px;
-    }
-    .positionrelativetop-15pxleft-15pxcontentvar--music {
-        position: relative;
-        top: -15px;
-        left: -15px;
-        content: var(--music);
-    }
-    .margintop-15px {
-        margin-top: 15px;
-    }
-    .positionrelativetop-10pxleft-15pxcontentvarmusic {
-        position: relative;
-        top: -10px;
-        left: -15px;
-        content: var(--music);
-    }
-    .mainContent {
-        display: none;
-    }
+.layout {
+    background-position: 65px;
+}
+
+.header {
+    left: 137px;
+}
+
+.marquee {
+    left: 308px;
+}
+
+.clock {
+    left: 246px;
+}
+
+.potd {
+    left: 175px;
+}
+
+.stats {
+    left: 174px;
+}
+
+.side {
+    left: 175px;
+}
+
+#mainframe {
+    left: 322px;
+}
+
+.me {
+    left: 902px;
+}
+
+.you {
+    left: 902px;
+}
+
+.dream {
+    left: 1099px;
+}
+
+.music {
+    left: 1157px;
+}
+
+.music img:nth-child(2) {
+    left: -15px;
+}
+
+.game {
+    left: 1075px;
+}
+
+.cliques {
+    left: 1091px;
+}
+
+.yw-widget-full {
+    left: 1091px;
+}
+
+.rainbow {
+    left: 1037px;
+}
+
+.l1 {
+    left: 871px;
+}
+
+.l2 {
+    left: 862px;
+}
+
+.l3 {
+    left: 117px;
+}
+
+.l4 {
+    left: 147px;
+}
+
+.l5 {
+    left: 916px;
+}
+
+.l6 {
+    left: 918px;
+}
+
+div {
+    background: #ffcdef;
+}
+
+body {
+    background: none;
+    font-family: 'basiic';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 0;
+    width: 530px;
+    color: var(--text);
+}
+
+a:hover {
+    background: var(--title-bg);
+}
+
+#statuscafe {
+    padding: .5em;
+    background-color: none;
+    border: 1px solid;
+    color: var(--marquee-bg);
+    background: var(--accent);
+    color: var(--text);
+}
+
+#statuscafe a {
+    color: var(--marquee-bg);
+    color: var(--link);
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+    background: var(--accent);
+    color: var(--text);
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    background: var(--accent);
+    color: var(--text);
+}
+
+span {
+    color: var(--marquee-bg);
+    background: var(--span-bg);
+    color: #5310ff;
+}
+
+.imgFloatLeft {
+    float: left;
+    padding: 1px 5px;
+}
+
+.spanColor {
+    color: #5310ff
+}
+
+.pPadding {
+    padding: 2px
+}
+
+.imgPadding2px {
+    padding: 2px;
+    width: 100%
+}
+
+.textAlignLeft {
+    text-align: left
+}
+
+.imgFloatRight {
+    float: right;
+    padding: 5px 35px
+}
+
+.aPadding3px {
+    padding: 3px
 }
