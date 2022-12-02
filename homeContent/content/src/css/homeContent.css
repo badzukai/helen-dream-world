@@ -649,7 +649,7 @@ button:hover {
 }
 
 div {
-    background: #d6ecf3 ;
+    background: #d6ecf3;
 }
 
 body {
@@ -723,9 +723,24 @@ span {
 
 .imgFloatRight {
     float: right;
-    padding: 5px 35px
+    padding: 10px 35px;
+    margin: 4px;
 }
 
 .aPadding3px {
     padding: 3px
+}
+
+.welcometml {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.guestbookContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
 }
