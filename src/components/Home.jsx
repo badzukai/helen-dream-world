@@ -20,7 +20,7 @@ export default function Home () {
     //     </head>
         <div className="index">
           <div className="layout">
-            <a href="https://cinni.net/" className="header"></a>
+            <a  className="header"></a>
             <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream home . . . disfrute su estadía! . . .<img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
             <div className="clock">
                 <script language="JavaScript">
@@ -29,6 +29,7 @@ export default function Home () {
                     name="clock" scrolling="no" border="0" framebor= "true"
                    ></iframe>');
                 </script>
+                <iframe src="http://web.archive.org/web/20071011105905/http://bubbles.sweet.free.fr/clocks/kitty.html" allowtransparency="true" marginwidth="0" marginheight="0" height="31" width="90&quot;" name="clock" scrolling="no" border="0" frameborder="0"></iframe>
             </div>
             <div className="potd">
                 <iframe width="120" height="120" src="https://www.youtube-nocookie.com/embed/PmIZ05TxBSo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -41,9 +42,9 @@ export default function Home () {
                                    document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
                     </script>
                 </center>
-                hits..... <script type="text/javascript" src="//counter.websiteout.net/js/20/0/13983/0"></script><br/>
+                 hits..... <script type="text/javascript" src="//counter.websiteout.net/js/20/0/13983/0"></script><br/>
 
-                mood <a href="http://www.imood.com/users/cinni" target="_blank" rel="noreferrer"><img src="http://moods.imood.com/display/uname-cinni/fg-6e45ff/bg-bdecff/imood.gif" className="imageBorder"/></a><br/>
+                mood <a href="http://www.imood.com/users/cinni" target="_blank" rel="noreferrer"><img src="https://moods.imood.com/display/uname-badzukai/imood.gif" className="imageBorder"/></a><br/>
 
                 rss...... <a href="https://cinni.net/rss.xml" target="_blank" rel="noreferrer"><img src="https://cinni.net/images/rssfeed.png" align="top"/>  <span className="fontS10px">★彡</span></a><br/> 
 

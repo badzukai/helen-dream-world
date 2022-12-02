@@ -226,7 +226,7 @@ iframe,
 }
 
 .stats {
-    top: 176px;
+    top: 190px;
     left: 174px;
     width: 135px;
     height: 100px;
@@ -262,8 +262,9 @@ iframe,
 .you table {
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: 6px;
-    margin: 0 5px;
+    font-size: 2px;
+    margin: 0 2px;
+    text-align: left;
 }
 
 .index td:nth-child(2) {
@@ -413,7 +414,7 @@ button:hover {
 }
 
 .l1 {
-    top: -2524px;
+    top: -2528px;
     left: 871px;
     width: 200px;
     height: 30px;
@@ -431,7 +432,7 @@ button:hover {
 }
 
 .l3 {
-    top: -2598px;
+    top: -2603px;
     left: 117px;
     width: 235px;
     height: 100px;
@@ -440,7 +441,7 @@ button:hover {
 }
 
 .l4 {
-    top: -2468px;
+    top: -2473px;
     left: 147px;
     width: 195px;
     height: 50px;
@@ -449,7 +450,7 @@ button:hover {
 }
 
 .l5 {
-    top: -2496px;
+    top: -2500px;
     left: 916px;
     width: 130px;
     height: 35px;
