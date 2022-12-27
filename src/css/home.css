@@ -1,6 +1,6 @@
 :root {
-    --bg: url("https://cinni.net/images/cloudysky2_indexed3_stars.png");
-    --layout: url("https://cinni.net/images/layout4.0.png");
+    --bg: url("../assets/images/fondo.png");
+    --layout: url("../assets/images/layout4.0.png");
     --rainbow: url("https://cinni.net/images/rainbow_blurry2.png");
     --webring: url("https://cinni.net/images/web/bg/webring_bg2.png");
     --l1: url("https://cinni.net/images/site/layoutcorner-11.png");
@@ -11,11 +11,11 @@
     --dream: url("https://cinni.net/images/dreamrealm_banner.png");
     --music: url("https://cinni.net/images/sonicblue_banner.png");
     --games: url("https://cinni.net/images/mygames_banner.png");
-    --text: #6e45ff;
+    --text: #8e3a3b;
     --link: #000;
     --selection: #ffcdef;
-    --accent: #bdecff;
-    --marquee: #6e45ff;
+    --accent: #CBB1B1;
+    --marquee: #8e3a3b;
     --line: #d6ecf3;
     --bgrepeat: no-repeat;
     --bgsize: 110% 100%;
@@ -32,7 +32,6 @@
     --rainbowpos: -90px;
     --bgcolor: #d6ecf3;
     --welcomebanner: url('https://cinni.net/images/welcome-dreamland.png');
-    --welcomeimg: url('https://cinni.net/images/doll/e089.gif');
     --welcomeimgmargin: 1px 15px;
     --h1gradient: linear-gradient(90deg, rgba(214, 236, 243, 0) 0%, rgba(199, 255, 196, 1) 25%, rgba(199, 255, 196, 1) 75%, rgba(214, 236, 243, 0) 100%);
 }
@@ -75,7 +74,7 @@
     --dream: url("https://cinni.net/images/site/dream-halloween.png");
     --music: url("https://cinni.net/images/site/music-halloween.png");
     --games: url("https://cinni.net/images/site/mygames_banner-halloween.png");
-    --text: #b582ff;
+    --text: #8e3a3b;
     --link: #ff8efd;
     --selection: #5310ff;
     --accent: #280f36;
@@ -97,9 +96,40 @@
     --rainbowpos: center;
     --bgcolor: #000;
     --welcomebanner: url('https://cinni.net/images/site/welcome-heck.png');
-    --welcomeimg: url('https://web.archive.org/web/20091021111606/http://www.geocities.com/bluedevils1us2002/angel2devil.gif');
     --welcomeimgmargin: 0;
     --h1gradient: linear-gradient(90deg, rgba(214, 236, 243, 0) 0%, rgba(68, 23, 98, 1) 25%, rgba(68, 23, 98, 1) 75%, rgba(214, 236, 243, 0) 100%);
+}
+
+::selection {
+    background: var(--selection);
+    color: var(--text);
+}
+
+::-webkit-scrollbar-track {
+    background: -webkit-linear-gradient(top, #ffb5cd 2%,#ffcca8 17%,#fff6b7 35%,#daffb7 55%,#aadeff 76%,#cebafc 97%);
+    border-radius: 0px;
+    width: 0px;
+    border: 1px dotted #8f38ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6ecf3;
+    border: 1px dotted #8f38ff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: #d6ecf3;
+}
+center {
+    display: block;
+    text-align: var(--webkitcenter);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 img {
@@ -126,7 +156,6 @@ img {
 }
 
 body {
-    /*background:var(--bg);*/
     color: var(--text);
     scrollbar-color: #8f38ff #d6ecf3;
     scrollbar-width: thin;
@@ -190,7 +219,7 @@ iframe,
     background: var(--layout);
     background-repeat: no-repeat;
     background-position: 65px;
-    width: 1330px;
+    width: 100%;
     height: 740px;
     margin: 0 auto;
     overflow: hidden;
@@ -209,13 +238,7 @@ iframe,
     color: var(--marquee);
 }
 
-.clock {
-    top: 101px;
-    left: 246px;
-    height: 40px;
-    width: 100px;
-    z-index: 2;
-}
+
 
 .potd {
     top: 131px;
@@ -226,7 +249,7 @@ iframe,
 }
 
 .stats {
-    top: 190px;
+    top: 235px;
     left: 174px;
     width: 135px;
     height: 100px;
@@ -240,7 +263,7 @@ iframe,
 }
 
 .side {
-    top: 205px;
+    top: 250px;
     left: 175px;
     width: 135px;
     height: 185px;
@@ -263,8 +286,9 @@ iframe,
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 2px;
-    margin: 0 2px;
+    margin: 0 3px;
     text-align: left;
+    
 }
 
 .index td:nth-child(2) {
@@ -279,18 +303,31 @@ iframe,
 }
 
 .me {
-    top: -876px;
+    top: -835px;
     left: 902px;
     width: 159px;
     height: 215px;
 }
 
-.me div,
-.you div {
+.me div {
     text-align: center;
+    color: #8e3a3b;
     width: 100%;
-    margin: 0 auto;
-    background: var(--accent);
+    margin-top: 3px;
+    background: #f5d3d3;
+    font-family: 'pixelverdana';
+    font-size: 6px;
+    letter-spacing: 1px;
+    height: 20px;
+}
+
+.you div
+{
+    text-align: center;
+    color: #8e3a3b;
+    width: 100%;
+    margin-top: 1px;
+    background: #f5d3d3;
     font-family: 'pixelverdana';
     font-size: 6px;
     letter-spacing: 1px;
@@ -305,7 +342,7 @@ iframe,
 }
 
 .you {
-    top: -839px;
+    top: -800px;
     left: 902px;
     width: 159px;
     height: 303px;
@@ -450,7 +487,7 @@ button:hover {
 }
 
 .l5 {
-    top: -2500px;
+    top: -2496px;
     left: 916px;
     width: 130px;
     height: 35px;
@@ -552,111 +589,132 @@ button:hover {
     margin: var(--welcomeimgmargin);
 }
 
-@media screen and (max-aspect-ratio:16/9) {
-    .layout {
-        background-position: 65px;
-    }
-    .header {
-        left: 137px;
-    }
-    .marquee {
-        left: 308px;
-    }
-    .clock {
-        left: 246px;
-    }
-    .potd {
-        left: 175px;
-    }
-    .stats {
-        left: 174px;
-    }
-    .side {
-        left: 175px;
-    }
-    #mainframe {
-        left: 322px;
-    }
-    .me {
-        left: 902px;
-    }
-    .you {
-        left: 902px;
-    }
-    .dream {
-        left: 1099px;
-    }
-    .music {
-        left: 1157px;
-    }
-    .music img:nth-child(2) {
-        left: -15px;
-    }
-    .game {
-        left: 1075px;
-    }
-    .cliques {
-        left: 1091px;
-    }
-    .yw-widget-full {
-        left: 1091px;
-    }
-    .rainbow {
-        left: 1037px;
-    }
-    .l1 {
-        left: 871px;
-    }
-    .l2 {
-        left: 862px;
-    }
-    .l3 {
-        left: 117px;
-    }
-    .l4 {
-        left: 147px;
-    }
-    .l5 {
-        left: 916px;
-    }
-    .l6 {
-        left: 918px;
-    }
-    .font5px {
-        font-size: 5px;
-    }
-    .imageBorder {
-        border: 1px dotted #6e45ff;
-    }
-    .fontS10px {
-        font-size: 10px;
-    }
-    .fontS12pxLineHeight12 {
-        font-size: 12px;
-        line-height: 12px;
-    }
-    .margintop50px {
-        margin-top: 50px;
-    }
-    .marginbottom20px {
-        margin-bottom: 20px;
-    }
-    .positionrelativetop-15pxleft-15pxcontentvar--music {
-        position: relative;
-        top: -15px;
-        left: -15px;
-        content: var(--music);
-    }
-    .margintop-15px {
-        margin-top: 15px;
-    }
-    .positionrelativetop-10pxleft-15pxcontentvarmusic {
-        position: relative;
-        top: -10px;
-        left: -15px;
-        content: var(--music);
-    }
-    .mainContent {
-        display: none;
-    }
+ 
+.layout {
+    background-position: 65px;
 }
+.header {
+    left: 137px;
+}
+.marquee {
+    left: 308px;
+}
+.clock {
+    left: 246px;
+}
+.potd {
+    left: 175px;
+}
+.stats {
+    left: 174px;
+}
+.side {
+    left: 175px;
+}
+#mainframe {
+    left: 322px;
+}
+.me {
+    left: 902px;
+}
+.you {
+    left: 902px;
+}
+.dream {
+    left: 1099px;
+}
+.music {
+    left: 1157px;
+}
+.music img:nth-child(2) {
+    left: -15px;
+}
+.game {
+    left: 1075px;
+}
+.cliques {
+    left: 1091px;
+}
+.yw-widget-full {
+    left: 1091px;
+}
+.rainbow {
+    left: 1037px;
+}
+.l1 {
+    left: 871px;
+}
+.l2 {
+    left: 862px;
+}
+.l3 {
+    left: 117px;
+}
+.l4 {
+    left: 147px;
+}
+.l5 {
+    left: 916px;
+}
+.l6 {
+    left: 918px;
+}
+.font5px {
+    font-size: 5px;
+}
+.imageBorder {
+    border: 1px dotted #8E3A3B;
+}
+.fontS10px {
+    font-size: 10px;
+}
+.fontS12pxLineHeight12 {
+    font-size: 12px;
+    line-height: 12px;
+}
+.margintop50px {
+    margin-top: 50px;
+}
+.marginbottom20px {
+    margin-bottom: 20px;
+}
+.positionrelativetop-15pxleft-15pxcontentvar--music {
+    position: relative;
+    top: -15px;
+    left: -15px;
+    content: var(--music);
+}
+.margintop-15px {
+    margin-top: 15px;
+}
+.positionrelativetop-10pxleft-15pxcontentvarmusic {
+    position: relative;
+    top: -10px;
+    left: -15px;
+    content: var(--music);
+}
+.mainContent {
+    display: none;
+}
+.contentContainer{
+    width: 565px;
+    height: 530px;
+    position: relative;
+    margin: -1px;
+    padding: 3px;
+    top: -310px;
+    left: 322px;
+    scrollbar-color: #8f38ff #d6ecf3;
+    scrollbar-width: thin;
+    z-index: 0;
+    overflow: auto;
+}
+
+.linkTag{
+    font-weight: normal;
+    text-shadow: 1px 1px 3px var(--line);
+    color: var(--link);
+    font-weight: bold;
+    text-decoration: none;
+}
+

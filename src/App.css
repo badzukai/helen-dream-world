@@ -1,7 +1,6 @@
 .App {
-    text-align: center;
-    background-color: red;
-    height: 100vh;
+    background-image: url("./assets/images/cloudsky-lighter.png");
+    width: 100%;
 }
 
 .App-logo {
@@ -38,3 +37,5 @@
         transform: rotate(360deg);
     }
 }
+
+

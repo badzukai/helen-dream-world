@@ -127,10 +127,14 @@ img {
 
 body {
     /*background:var(--bg);*/
-    color: var(--text);
-    scrollbar-color: #8f38ff #d6ecf3;
-    scrollbar-width: thin;
+    background: none;
     font-family: 'basiic';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 4px auto;
+    padding: 3px;
+    width: 530px;
+    color: #b582ff;
 }
 
 .index {
@@ -224,6 +228,17 @@ iframe,
     padding: 7px;
 }
 
+.lastUpdates {
+    text-align: left;
+    background: none;
+    font-family: 'basiic';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 3px;
+    width: 530px;
+    color: #b582ff;
+}
 .stats {
     top: 176px;
     left: 174px;
@@ -237,6 +252,20 @@ iframe,
     letter-spacing: 1px;
     line-height: 15px;
 }
+.dividertop {
+    display: flex;
+    margin-left: 90px;
+    margin-bottom: -40px;
+
+}
+
+.dividerbottom {
+    display: flex;
+    margin-left: 90px;
+    margin-top: -40px;
+
+}
+
 
 .side {
     top: 205px;
@@ -633,7 +662,7 @@ button:hover {
 }
 
 .l3 {
-    left: 117px;
+    left: 11.7px;
 }
 
 .l4 {
@@ -652,16 +681,7 @@ div {
     background: #d6ecf3;
 }
 
-body {
-    background: none;
-    font-family: 'basiic';
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    padding: 0;
-    width: 530px;
-    color: var(--text);
-}
+
 
 a:hover {
     background: var(--title-bg);
@@ -696,7 +716,7 @@ a:hover {
 span {
     color: var(--marquee-bg);
     background: var(--span-bg);
-    color: #5310ff;
+    color: #b582ff;
 }
 
 .imgFloatLeft {
@@ -705,7 +725,8 @@ span {
 }
 
 .spanColor {
-    color: #5310ff
+    color: #5310ff;
+
 }
 
 .pPadding {
@@ -731,11 +752,22 @@ span {
     padding: 3px
 }
 
+.textoComun {
+    color: #b582ff;
+}
+
+.spanColorbien {
+    color: #5310ff;
+    background: -webkit-linear-gradient(left, #d6ecf3 0%, #ffb5cd 12%,#ffcca8 24%,#fff6b7 48%,#daffb7 60%,#aadeff 72%,#cebafc 84%, #d6ecf3 100%);
+
+}
+
 .welcometml {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    
 }
 
 .guestbookContainer {
@@ -743,4 +775,16 @@ span {
     justify-content: center;
     align-items: center;
     height: 120px;
+
 }
+.h2    {
+        color: #b582ff;
+        padding:2px;
+        margin:0px 0;
+        border-bottom:1px dotted;
+        text-align: left;
+        font-size: 15px;
+        font-style: oblique;
+    
+}
+
