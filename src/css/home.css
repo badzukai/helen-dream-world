@@ -1,41 +1,3 @@
-:root {
-    --bg: url("../assets/images/fondo.png");
-    --layout: url("../assets/images/layout4.0.png");
-    --rainbow: url("https://cinni.net/images/rainbow_blurry2.png");
-    --webring: url("https://cinni.net/images/web/bg/webring_bg2.png");
-    --l1: url("https://cinni.net/images/site/layoutcorner-11.png");
-    --l2: url("https://cinni.net/images/layout4.0_corner1.png");
-    --l3: url("https://cinni.net/test/potd.png");
-    --l4: url("https://cinni.net/test/sitestats.png");
-    --l5: url("https://cinni.net/test/chains-div.png");
-    --dream: url("https://cinni.net/images/dreamrealm_banner.png");
-    --music: url("https://cinni.net/images/sonicblue_banner.png");
-    --games: url("https://cinni.net/images/mygames_banner.png");
-    --text: #8e3a3b;
-    --link: #000;
-    --selection: #ffcdef;
-    --accent: #CBB1B1;
-    --marquee: #8e3a3b;
-    --line: #d6ecf3;
-    --bgrepeat: no-repeat;
-    --bgsize: 110% 100%;
-    --pagedoll: none;
-    --marquee-color: #6e45ff;
-    --filter: brightness(1);
-    --link-color: black;
-    --text-color: #6e45ff;
-    --title-bg: #bdecff;
-    --span-bg: linear-gradient(90deg, rgba(214, 236, 243, 0) 0%, rgba(255, 213, 208, 1) 15%, rgba(252, 255, 196, 1) 30%, rgba(199, 255, 196, 1) 50%, rgba(196, 255, 251, 1) 70%, rgba(248, 215, 255, 1) 85%, rgba(214, 236, 243, 0) 100%);
-    --rainbowtop: -2020px;
-    --rainbowleft: 1037px;
-    --rainbowsize: 120% 100%;
-    --rainbowpos: -90px;
-    --bgcolor: #d6ecf3;
-    --welcomebanner: url('https://cinni.net/images/welcome-dreamland.png');
-    --welcomeimgmargin: 1px 15px;
-    --h1gradient: linear-gradient(90deg, rgba(214, 236, 243, 0) 0%, rgba(199, 255, 196, 1) 25%, rgba(199, 255, 196, 1) 75%, rgba(214, 236, 243, 0) 100%);
-}
-
 
 /*
   [data-theme="dark"] {
@@ -136,6 +98,12 @@ img {
     filter: var(--filter);
 }
 
+
+
+
+
+
+
 @font-face {
     font-family: 'pixelverdana';
     src: url(https://cinni.net/fonts/pixelfjverdana12pt.woff);
@@ -181,7 +149,6 @@ body {
 a {
     color: var(--link);
     font-weight: bold;
-    text-decoration: none;
 }
 
 
@@ -225,28 +192,17 @@ iframe,
     overflow: hidden;
 }
 
-.header {
-    top: 50px;
-    left: 137px;
-    padding: 40px 450px;
-}
 
 .marquee {
-    width: 599px;
-    top: 93px;
-    left: 308px;
+    width: 600px;
+    top: 123px;
+    margin-left: 28px;
     color: var(--marquee);
 }
 
 
 
-.potd {
-    top: 131px;
-    left: 175px;
-    width: 135px;
-    height: 135px;
-    padding: 7px;
-}
+
 
 .stats {
     top: 235px;
@@ -264,10 +220,10 @@ iframe,
 
 .side {
     top: 250px;
-    left: 175px;
-    width: 135px;
+    left: 930px;
+    width: 100px;
     height: 185px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .side img {
@@ -302,52 +258,46 @@ iframe,
     text-shadow: 1px 1px 3px var(--line);
 }
 
-.me {
-    top: -835px;
-    left: 902px;
-    width: 159px;
-    height: 215px;
-}
-
 .me div {
     text-align: center;
-    color: #8e3a3b;
-    width: 100%;
+    width: 90%;
     margin-top: 3px;
-    background: #f5d3d3;
+    margin-bottom: 10px;
+    background: none;
     font-family: 'pixelverdana';
     font-size: 6px;
     letter-spacing: 1px;
     height: 20px;
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
+    box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
 }
 
 .you div
 {
     text-align: center;
-    color: #8e3a3b;
-    width: 100%;
-    margin-top: 1px;
-    background: #f5d3d3;
+    width: 90%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background: none;
     font-family: 'pixelverdana';
     font-size: 6px;
     letter-spacing: 1px;
     height: 20px;
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
+    box-shadow: 3px 3px 0px 0px rgba(187,137,252,1);
 }
+
+
 
 .me a:hover,
 .you a:hover {
     font-style: italic;
-    background: var(--selection);
     color: var(--text);
 }
 
-.you {
-    top: -800px;
-    left: 902px;
-    width: 159px;
-    height: 303px;
-    /*overflow-y:scroll;*/
-}
+
 
 button {
     font-family: 'pixelverdana';
@@ -517,7 +467,7 @@ button:hover {
     background: -webkit-linear-gradient(top, #ffb5cd 2%, #ffcca8 17%, #fff6b7 35%, #daffb7 55%, #aadeff 76%, #cebafc 97%);
     border-radius: 0px;
     width: 0px;
-    border: 1px dotted #8f38ff;
+    border: 1px dotted #be3435;
 }
 
 
@@ -526,13 +476,13 @@ button:hover {
   }*/
 
  ::-webkit-scrollbar-thumb {
-    background: #d6ecf3;
-    border: 1px dotted #8f38ff;
+    background: #ffd4d4;
+    border: 1px dotted #be3435;
     border-radius: 0px;
 }
 
  ::-webkit-scrollbar-thumb:hover {
-    background: #8f38ff;
+    background: #be3435;
     /* cursor:url(/emoticon/cursor_default.png), auto; */
 }
 
@@ -591,7 +541,7 @@ button:hover {
 
  
 .layout {
-    background-position: 65px;
+    background-position: 23px;
 }
 .header {
     left: 137px;
@@ -606,19 +556,25 @@ button:hover {
     left: 175px;
 }
 .stats {
-    left: 174px;
+    left: 930px;
 }
 .side {
-    left: 175px;
+    left: 930px;
 }
 #mainframe {
     left: 322px;
 }
 .me {
-    left: 902px;
+    left: 195px;
+    top: -810px;
+    width: 159px;
+    height: 215px;
 }
 .you {
-    left: 902px;
+    left: 195px;
+    top: -800px;
+    width: 159px;
+    height: 303px;
 }
 .dream {
     left: 1099px;
@@ -696,18 +652,29 @@ button:hover {
 .mainContent {
     display: none;
 }
+
 .contentContainer{
     width: 565px;
-    height: 530px;
+    height: 535px;
     position: relative;
-    margin: -1px;
-    padding: 3px;
-    top: -310px;
-    left: 322px;
-    scrollbar-color: #8f38ff #d6ecf3;
+    top: -285px;
+    left: 357px;
+    scrollbar-color: #8f38ff #be3435;
     scrollbar-width: thin;
     z-index: 0;
     overflow: auto;
+    }
+
+
+.h1 {
+    
+        background: var(--h1-bg);
+        padding: 4px;
+        padding-left: 5px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
 }
 
 .linkTag{
@@ -715,6 +682,5 @@ button:hover {
     text-shadow: 1px 1px 3px var(--line);
     color: var(--link);
     font-weight: bold;
-    text-decoration: none;
 }
 

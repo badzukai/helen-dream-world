@@ -5,8 +5,7 @@ import { Route, Link } from "react-router-dom"
 export default function SobreMi () {
     return(
         <div className="contentContainer">
-            
-            <body>
+
                 <div className="sobremiAbout">
                 <img src="https://cinni.net/images/icon/about.png" className="sobremiImageStyle"/>
                     <title>helen dream world</title>
@@ -19,8 +18,7 @@ export default function SobreMi () {
                             <li> <b>fav animal:</b> cats</li>
                             <li> <b>contact:</b> you were looking in yours </li>
                 </div>          
-            </body>
-           
+
         </div>
                 
     )

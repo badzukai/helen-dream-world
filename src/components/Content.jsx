@@ -26,8 +26,8 @@ export default function Content(){
 				<br />
 				<span className="welcomeTextContainer"> <p className="welcomeText"> ♡ ♡ ♡ <b><i>bienvenidas</i></b> to my lil corner on the web!</p> <p className="welcomeText"> soy helena ♡ ♡ ♡ </p></span>
 			</div>
-		<div className="homepageContent">
-			<div className="gifContent">
+			<div className="homepageContent">
+				<div className="gifContent">
 			<img src="https://archive.cinni.net/99gif/items/7/blob_heart.gif"/><br/> 
 			</div>
 			<div className="h2">
@@ -114,9 +114,10 @@ export default function Content(){
 			<script src="https://99gifshop.neocities.org/theme-control.js"></script>
 			<script data-goatcounter="https://cinni.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 			
-			</div> //div final// 
+		</div> //div final// 
+
+	
+
 			
 	)
 }
-
-

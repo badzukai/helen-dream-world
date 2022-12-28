@@ -67,13 +67,13 @@ export default function Home () {
             <Route path={"/blog"} render={() => <Blog/>} />
             
             <div className="me">
-                <div>
-                    <span className="fontS12pxLineHeight12">✧ ✧ ♡</span> me <span className="fontS12pxLineHeight12" >♡ ✧ ✧ </span></div>
-                    <table>
+                <div className="mefondo">
+                    <span className="fontS12pxLineHeight12">♡</span> me <span className="fontS12pxLineHeight12" >♡</span></div>
+                <table>
                         <tbody>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/yys/tokage.png"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <Link className="linkTag" to="/"> home </Link>
@@ -81,7 +81,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/cow-01.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <Link className="linkTag" to="/sobremi">sobre mi </Link>
@@ -89,7 +89,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/gbook.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                             <Link className="linkTag" to="/blog"> blog </Link>
@@ -97,7 +97,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/stuff/tinicomputer.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <a href="x" target="frame">photo album</a>
@@ -106,7 +106,7 @@ export default function Home () {
                             
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/nature/tiniflower2.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <a href="https://cinni.net/music.html" target="frame">music</a>
@@ -114,7 +114,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/pop-112.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <a href="https://cinni.net/me/books/" target="frame">reading club</a>
@@ -122,7 +122,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/mini-usi-a.gif"/>
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                                 <a href="https://cinni.net/about/wip.html" target="frame">www wip</a>
@@ -138,7 +138,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                                <img src="https://cinni.net/images/yys/youvegotmail.gif"/> 
+                                <img src="https://cinni.net/images/yys/blueheartbounce.gif"/> 
                             </td>
                             <td>
                                 <a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-36688-af" target="_blank" rel="noreferrer">guestbook</a>
@@ -146,7 +146,7 @@ export default function Home () {
                             </tr>
                             <tr>
                             <td>
-                            <img src="https://cinni.net/images/kofi.png"/>
+                            <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
                             <a href="https://ko-fi.com/cinnii" target="_blank" rel="noreferrer"> ko-fi</a>
