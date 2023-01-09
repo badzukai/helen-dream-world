@@ -38,7 +38,8 @@ export default function Content(){
 				</span>
 				</b> <hr />
 			</div>
-			<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=badzukai" defer></script>
+			<div id="statuscafe">
+				<div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=badzukai" defer></script>
 			
 				
 			<div className="h2">
@@ -50,16 +51,19 @@ export default function Content(){
 			</div>
 
 			<div className="body">
+				<p className="lastUpdates"> 
+					<b> new updates: </b> <br />
+					♡ <a href="/sobreMi"> sobre mi subpage </a> <br />
+					</p>
 				<p className="lastUpdates">
 						<b>currently working on :  </b><br />
-						♡ blog <br />
+						♡ <a href="/blog"> blog </a> <br />
 						♡ photodump <br />
 						♡ links <br/> 
 						<br/> 
 						<b> older updates: </b><br/>
 					
 						♡ <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34086-6c" target="_blank"> guestbook </a>(firmenlo!) <br /> 
-						♡  <a href="/sobreMi"> sobre mi subpage </a> <br />
 						♡ <br /> 
 						♡ <br /> 
 						♡ <br /> 

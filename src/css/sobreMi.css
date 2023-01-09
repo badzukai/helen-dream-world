@@ -67,9 +67,20 @@ h1,h2{
     border: none;
 }
 
+.sobremiTitleAbout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.sobremiTitleAbout h1{
+    width: 113px;
+}
+
 .sobremiAbout {
     color: var(text);
-    ;
+    line-height: 13px;
 }
 
 .sobremiImageStyle {
