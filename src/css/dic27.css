@@ -1,0 +1,103 @@
+:root {
+    --Bfont-main: 'Chivo Mono', monospace;
+    --Bfont-secondary:'Chivo Mono', monospace;
+    --Bfont-scale: 1em;
+    --Bbackground-color: #432f46;
+    --Btext-color: #ddd;
+    --Blink-color: #8cc2dd;
+    --Bvisited-color:  #8b6fcb;
+    --Bcode-background-color: #000;
+    --Bcode-color: #ddd;
+    --Bblockquote-color: #ccc;
+    --Bheading-color: #eee;
+    --background:linear-gradient(180deg, rgb(255, 230, 255) 0%, rgb(255, 255, 255) 100%);
+    --Btext: #6e45ff;
+    --Bmain-bg:white;
+    --Bh1-bg:rgb(255, 230, 255);
+    --Bh3-bg:linear-gradient(90deg, rgb(255, 230, 255) 0%, #cbecf3 100%);
+    --Btable-bg:#f6ffe8;
+    --Bthead:#ffe6ff;
+    --Btbody:white;
+    --Bnth:#fff4ff;
+    --Btitle-bg:linear-gradient(180deg, rgba(255,230,255,1) 35%, rgba(255,171,218,1) 100%);
+    --Bhighlight-bg:#fff4ff;
+    --Bhighlight-color:#6e45ff;
+    --Bnav-bg:#fff4ff;
+    --Blink-color:#f568d6;
+    --Blink-bg:#ffe2fd;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+
+.dic27Titulo {
+    background: var(--Bh1-bg);
+    padding: 4px;
+    padding-left:5px;
+    border-radius:4px;
+    margin-left:10px;
+    margin-right:10px;
+    border-right: 1px solid #f568d6;
+    border-bottom: 1px solid #f568d6;
+    text-shadow: 1px 1px 0px #dea4fc;
+    color: var(--Btext);
+    letter-spacing:1px;
+    font-size: 12px;
+    font-family: var(--Bfont-main);
+}
+
+.dicBlogEntries {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #B37DFE;
+    margin-right: 7px;
+    background-color: #b7dbe2;
+    
+}
+
+.dic27Cuerpo {
+    padding: 6px;
+    margin-left:10px;
+    margin-right:40px;
+    color: var(--text);
+    letter-spacing:1px;
+    font-size:12px;
+    font-family: var(--Bfont-main);
+}
+.dic27Corazon {
+    padding: 6px;
+    padding-left:20px;
+    background-image: url("https://cinni.net/fruitykitty/cyworld/heartbulletpink.png");
+    background-repeat:no-repeat;
+    margin-left:10px;
+    color: var(--text);
+    letter-spacing:1px;
+    font-size:12px;
+    font-family: var(--Bfont-main);
+}
+.dic27Linea {
+    border-bottom: 1px solid #6e45ff;
+    padding: 2px;
+    margin-left:10px;
+    margin-right:40px;
+    color: var(--text);
+    letter-spacing:1px;
+    font-size:12px;
+    font-family: var(--Bfont-main);
+}
+
+.dic27Degrade {
+    background: var(--Bh3-bg);
+    padding: 6px;
+    padding-left:5px;
+    border-radius:4px;
+    margin-left:10px;
+    text-shadow: 1px 1px 0px #dea4fc;;
+    color: var(--text);
+    letter-spacing:1px;
+    font-size:12px;
+    font-family: var(--Bfont-main);
+      
+}

@@ -7,7 +7,11 @@ import SobreMi from "./SobreMi"
 import { Route, Link } from "react-router-dom"
 import Content from "./Content"
 import Blog from "./Blog"
-
+import Jan2023 from "./Jan2023"
+import Dic2022 from "./Dic2022.jsx"
+import Dic27 from "./Dic27.jsx"
+import Jan09 from "./Jan09.jsx"
+import NotFound from "./NotFound.jsx"
 
 
 export default function Home () {
@@ -29,7 +33,8 @@ export default function Home () {
     //     </head>
         <div className="index">
           <div className="layout">
-            <a  className="header"></a>
+          
+          
             <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . .<img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
             
             <div className="potd">
@@ -45,14 +50,14 @@ export default function Home () {
             </div>
             <div className="side">
                 <center>
-                <img src="https://i2.glitter-graphics.org/pub/538/538172dqlxwnx868.gif" className="button"/>
-                <img src="https://i10.glitter-graphics.org/pub/223/223900lkyihutiz9.gif" className="button"/>
-                <img src="https://i3.glitter-graphics.org/pub/180/180793o6w0geqbip.gif" className="button"/>
-                <img src="https://dl5.glitter-graphics.net/pub/143/143975i590kaiky0.gif" className="button"/>
-                <img src="https://dl3.glitter-graphics.net/pub/360/360743ebjz2woppw.gif" className="button"/>
-                <img src="https://i8.glitter-graphics.org/pub/1227/1227758dcwfqu75up.gif" className="button"/>
-                <img src="https://i9.glitter-graphics.org/pub/406/406599zlju4kb016.gif" className="button"/>
-                <img src="https://i10.glitter-graphics.org/pub/805/805441e8czn30y1y.gif" className="button"/>
+                        <img src="https://i2.glitter-graphics.org/pub/538/538172dqlxwnx868.gif" className="button"/>
+                        <img src="https://i10.glitter-graphics.org/pub/223/223900lkyihutiz9.gif" className="button"/>
+                        <img src="https://i3.glitter-graphics.org/pub/180/180793o6w0geqbip.gif" className="button"/>
+                        <img src="https://dl5.glitter-graphics.net/pub/143/143975i590kaiky0.gif" className="button"/>
+                        <img src="https://dl3.glitter-graphics.net/pub/360/360743ebjz2woppw.gif" className="button"/>
+                        <img src="https://i8.glitter-graphics.org/pub/1227/1227758dcwfqu75up.gif" className="button"/>
+                        <img src="https://i9.glitter-graphics.org/pub/406/406599zlju4kb016.gif" className="button"/>
+                        <img src="https://i10.glitter-graphics.org/pub/805/805441e8czn30y1y.gif" className="button"/>
                        <img src="https://cinni.net/images/blinky_22.gif" className="button"/>
                        <img src="https://cinni.net/images/web/blinkies/cn_needcoffee.gif" className="button"/>
                        <img src="https://cinni.net/images/web/blinkies/night_bloger.gif" className="button"/>
@@ -63,9 +68,14 @@ export default function Home () {
                        
                 </center>
             </div>
+            {/* <Route path= "*" render={ () => <NotFound/>}/> */}
             <Route exact path="/" render={() => <Content/>} />
             <Route path={"/sobremi"} render={() => <SobreMi/>} />
             <Route path={"/blog"} render={() => <Blog/>} />
+            <Route path={"/jan2023"} render={() => <Jan2023/>} />
+            <Route path={"/dic2022"} render={() => <Dic2022/>} />
+            <Route path={"/dic27"} render={ () => <Dic27/>}/>
+            <Route path={"/jan09"} render={ () => <Jan09/>}/>
             
             <div className="me">
                 <div className="mefondo">
@@ -126,7 +136,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
-                                <a href="https://cinni.net/about/wip.html" target="frame">www wip</a>
+                                <a href="https://cinni.net/about/wip.html" target="frame">quick blog</a>
                             </td>
                             </tr>
                             <tr>
@@ -134,7 +144,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
-                                <a href="https://cinni.net/shrine.html" target="frame">shrines</a>
+                                <a href="https://cinni.net/shrine.html" target="frame">textos</a>
                             </td>
                             </tr>
                             <tr>
@@ -142,7 +152,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/> 
                             </td>
                             <td>
-                                <a href="http://users2.smartgb.com/g/g.php?a=s&i=g26-36688-af" target="_blank" rel="noreferrer">guestbook</a>
+                                <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34086-6c" target="_blank" rel="noreferrer">guestbook</a>
                             </td>
                             </tr>
                             <tr>
@@ -150,7 +160,7 @@ export default function Home () {
                             <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td>
-                            <a href="https://ko-fi.com/cinnii" target="_blank" rel="noreferrer"> ko-fi</a>
+                            <a href="https://ko-fi.com/cinnii" target="_blank" rel="noreferrer"> drawings</a>
                             </td>
                             </tr>
                         </tbody>
@@ -167,7 +177,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://oekaki.cinni.net/" target="_blank" rel="noreferrer"> oekaki board </a>
+                                    <a href="https://oekaki.cinni.net/" target="_blank" rel="noreferrer"> resources </a>
                                 </td>
                             </tr>
                             <tr>
@@ -175,7 +185,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://archive.cinni.net/" target="_blank" rel="noreferrer">cutie net archive</a>
+                                    <a href="https://archive.cinni.net/" target="_blank" rel="noreferrer">a</a>
                                 </td>
                             </tr>
                             <tr>
@@ -183,7 +193,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://directory.cinni.net/" target="_blank" rel="noreferrer">ichigo directory</a>
+                                    <a href="https://directory.cinni.net/" target="_blank" rel="noreferrer">cool websites</a>
                                 </td>
                             </tr>
                             <tr>
@@ -191,7 +201,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://cinni.net/linkout.html" target="frame">cool links</a>
+                                    <a href="https://cinni.net/linkout.html" target="frame">updates</a>
                                 </td>
                             </tr>
                             <tr>
@@ -199,7 +209,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td>
-                                    <a href="https://cinni.net/resources.html" target="frame">artist resources</a>
+                                    <a href="https://cinni.net/resources.html" target="frame">games</a>
                                 </td>
                             </tr>
                             <tr>
