@@ -4,19 +4,24 @@
 /* eslint-disable jsx-a11y/alt-text */
 import "../css/home.css"
 import SobreMi from "./SobreMi"
-import { Route, Link } from "react-router-dom"
+import { Route, Link, Switch } from "react-router-dom"
 import Content from "./Content"
 import Blog from "./Blog"
 import Jan2023 from "./Jan2023"
 import Dic2022 from "./Dic2022.jsx"
 import Dic27 from "./Dic27.jsx"
 import Jan09 from "./Jan09.jsx"
+import Jan13 from "./Jan13.jsx"
+import Jan18 from "./Jan18.jsx"
 import NotFound from "./NotFound.jsx"
-
+import InProgress from "./InProgress.jsx"
 
 export default function Home () {
     
-
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
     
     return(
     // <html>
@@ -31,11 +36,12 @@ export default function Home () {
     //         updateTitle = false;
     //         </script>
     //     </head>
+    /*/ https://webneko.net/?valentine /*/
         <div className="index">
           <div className="layout">
+    
           
-          
-            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . .<img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
+            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . . &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . esta página esta construida para verse en computadoras, si estas desde un celular no tendrás acceso a muchas funciones ... <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
             
             <div className="potd">
                 <iframe width="120" height="120" src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -68,14 +74,20 @@ export default function Home () {
                        
                 </center>
             </div>
-            {/* <Route path= "*" render={ () => <NotFound/>}/> */}
-            <Route exact path="/" render={() => <Content/>} />
-            <Route path={"/sobremi"} render={() => <SobreMi/>} />
-            <Route path={"/blog"} render={() => <Blog/>} />
-            <Route path={"/jan2023"} render={() => <Jan2023/>} />
-            <Route path={"/dic2022"} render={() => <Dic2022/>} />
-            <Route path={"/dic27"} render={ () => <Dic27/>}/>
-            <Route path={"/jan09"} render={ () => <Jan09/>}/>
+            
+            <Switch>
+                <Route exact path="/" render={() => <Content/>} />
+                <Route path={"/sobremi"} render={() => <SobreMi/>} />
+                <Route path={"/blog"} render={() => <Blog/>} />
+                <Route path={"/inprogress"} render={() => <InProgress/>} />
+                <Route path={"/jan2023"} render={() => <Jan2023/>} />
+                <Route path={"/dic2022"} render={() => <Dic2022/>} />
+                <Route path={"/dic27"} render={ () => <Dic27/>}/>
+                <Route path={"/jan09"} render={ () => <Jan09/>}/>
+                <Route path={"/jan13"} render={ () => <Jan13/>}/>
+                <Route path={"/jan18"} render={ () => <Jan18/>}/>
+                <Route render={ () => <NotFound/>}/>
+            </Switch>
             
             <div className="me">
                 <div className="mefondo">
@@ -86,7 +98,7 @@ export default function Home () {
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
+                            <td className="sidebar">
                                 <Link className="linkTag" to="/"> home </Link>
                             </td>
                             </tr>
@@ -94,15 +106,15 @@ export default function Home () {
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
+                            <td className="sidebar">
                                 <Link className="linkTag" to="/sobremi">sobre mi </Link>
                             </td>
                             </tr>
                             <tr>
-                            <td>
+                            <td >
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
+                            <td className="sidebar">
                             <Link className="linkTag" to="/blog"> blog </Link>
                             </td>
                             </tr>
@@ -110,73 +122,67 @@ export default function Home () {
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                                <a href="x" target="frame">photo album</a>
+                            <td className="sidebar">
+                            <Link className="linkTag" to="/InProgress"> photo album </Link>
                             </td>
                             </tr>
                             
                             <tr>
-                            <td>
+                            <td >
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                                <a href="https://cinni.net/music.html" target="frame">music</a>
+                            <td className="sidebar">
+                            <Link className="linkTag" to="/InProgress"> music </Link>
                             </td>
                             </tr>
                             <tr>
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                                <a href="https://cinni.net/me/books/" target="frame">reading club</a>
+                            <td className="sidebar">
+                            <Link className="linkTag" to="/InProgress"> reading </Link>
                             </td>
                             </tr>
                             <tr>
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                                <a href="https://cinni.net/about/wip.html" target="frame">quick blog</a>
+                            <td className="sidebar">
+                            <Link className="linkTag" to="/InProgress"> quickblog </Link>
                             </td>
                             </tr>
                             <tr>
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                                <a href="https://cinni.net/shrine.html" target="frame">textos</a>
+                            <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> textos </Link>
                             </td>
                             </tr>
                             <tr>
                             <td>
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/> 
                             </td>
-                            <td>
-                                <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34086-6c" target="_blank" rel="noreferrer">guestbook</a>
+                            <td className="sidebar">
+                            <Link className="linkTag" to="/InProgress"> drawings </Link>
+                                
                             </td>
                             </tr>
                             <tr>
                             <td>
                             <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
-                            <td>
-                            <a href="https://ko-fi.com/cinnii" target="_blank" rel="noreferrer"> drawings</a>
+                            <td className="sidebar">
+                            <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34086-6c" target="_blank" rel="noreferrer">guestbook</a>
                             </td>
+                            
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            <div className="you">
-                <div>
-                    <span className="fontS12pxLineHeight12">✧ ✧ ♡</span> you <span className="fontS12pxLineHeight12">♡ ✧ ✧</span></div>
-                    <table>
-                        <tbody>
+                       
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
+                                <td className="sidebar">
                                     <a href="https://oekaki.cinni.net/" target="_blank" rel="noreferrer"> resources </a>
                                 </td>
                             </tr>
@@ -184,114 +190,75 @@ export default function Home () {
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://archive.cinni.net/" target="_blank" rel="noreferrer">a</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> loki </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://directory.cinni.net/" target="_blank" rel="noreferrer">cool websites</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> cool websites </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/linkout.html" target="frame">updates</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> updates </Link>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
+                                </td>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> games </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/resources.html" target="frame">games</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> quiz results </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/adopt.html" target="frame">adoption cafe</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/toybox/" target="frame">toy box</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> toy box </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif" width="17"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/web.html" target="frame">web goodies</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> web goodies </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/kaomoji.html" target="frame">kaomoji</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> fonts </Link>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
-                                <td>
-                                    <a href="https://cinni.net/font.html" target="frame">fonts</a>
+                                <td className="sidebar">
+                                <Link className="linkTag" to="/InProgress"> themes </Link>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif" width="17"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/theme/" target="frame">themes</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/doll.html" target="frame">dollz center</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/cliques.html" target="frame">cliques</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/sitename.html" target="frame"> URL generator </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
-                                </td>
-                                <td>
-                                    <a href="https://cinni.net/globe.html" target="frame"> globe maker </a>
-                                </td>
-                            </tr>
+                            
                         </tbody>
 
                     </table>

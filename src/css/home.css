@@ -22,7 +22,7 @@
   }
   */
 
-[data-theme="dark"] {
+[data-theme="dark-mode"] {
     --bg: url("https://cinni.net/sonic_blue/space_bg.2.gif");
     --layout: url("https://cinni.net/images/site/halloween-test.png");
     --rainbow: url("https://test.cinni.net/cinni/new_fireanim.gif");
@@ -146,7 +146,11 @@ body {
     scrollbar-width: thin;
     padding: 0;
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
@@ -188,10 +192,10 @@ iframe,
 
 
 .layout {
-    background: var(--layout);
+    background: var(--layout); 
     background-repeat: no-repeat;
     background-position: 65px;
-    width: 100%;
+    width: 1250px;
     height: 740px;
     margin: 0 auto;
     overflow: hidden;
@@ -263,7 +267,9 @@ iframe,
     text-align: left;
     
 }
-
+.sidebar {
+    padding: 5px;
+}
 .index td:nth-child(2) {
     font-size: 6px;
     font-family: 'pixelverdana';

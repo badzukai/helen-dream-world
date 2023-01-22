@@ -1,6 +1,6 @@
 .App {
-    background-image: url("./assets/images/cloudsky-lighter.png");
     width: 100%;
+    min-height: 100vh;
 }
 
 .App-logo {
