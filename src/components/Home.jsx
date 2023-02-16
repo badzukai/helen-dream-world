@@ -63,10 +63,10 @@ export default function Home () {
         <div className={`index ${theme} `}>
           <div className="layout">
           
-            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . . &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . esta página esta construida para verse en computadoras, si estas desde un celular no tendrás acceso a muchas funciones ... <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
+            <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . . <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/>  . . . esta página esta construida para verse en computadoras, si estas desde un celular no tendrás acceso a muchas funciones ... <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee></div> 
             
             <div className="potd">
-                <iframe width="120" height="120" src="" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <a href="/"></a>
             </div>
             <div className="stats">
 

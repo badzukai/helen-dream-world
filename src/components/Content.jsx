@@ -24,11 +24,11 @@ export default function Content(){
 			<div className="welcometml">
 				<img src="https://dl.glitter-graphics.com/pub/345/345294me3vmife4k.gif" className="welcomeimg"/>
 				<br />
-				<span className="welcomeTextContainer"> <p className="welcomeText"> ♡ ♡ ♡ <b><i>bienvenidas</i></b> to my lil corner on the web!</p> <p className="welcomeText"> soy helena ♡ ♡ ♡ </p></span>
+				<span className="welcomeTextContainer"> <p className="welcomeText"> ♡ ♡ ♡ <b><i>bienvenidas</i></b> to my lil corner on the web!</p> <br /> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://archive.cinni.net/99gif/items/7/blob_heart.gif"/></span>
 			</div>
 			<div className="homepageContent">
 				<div className="gifContent">
-			<img src="https://archive.cinni.net/99gif/items/7/blob_heart.gif"/><br/> 
+			<br/> 
 			</div>
 			<div className="h2">
 				<b>

@@ -9,7 +9,7 @@ export default function Music () {
             <b> sza </b>
 
         </div>
-        <iframe className="videoyutun" src="https://open.spotify.com/track/7fd3aMiuwHWKsTdZafjOfZ?si=6a7633e812f043e7" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HlcSL2ZXsbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     )
 }

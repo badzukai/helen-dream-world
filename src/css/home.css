@@ -80,7 +80,7 @@
     --selection:#5310ff;
     --accent:#280f36;
     --marquee:#ff8efd;
-      --line:#000;
+    --line:#000;
     --filter:brightness(0.9);
     --span-bg:linear-gradient(90deg, rgba(235,100,131,0) 3%, rgba(235,100,131,1) 9%, rgba(233,143,112,1) 23%, rgba(204,154,126,1) 33%, rgba(168,192,154,1) 52%, rgba(178,155,219,1) 69%, rgba(199,105,192,1) 88%, rgba(202,152,130,0) 97%);
    --bgrepeat:repeat;
@@ -107,6 +107,7 @@
     color: var(--text);
 }
 
+/*/
 ::-webkit-scrollbar-track {
     background: -webkit-linear-gradient(top, #ffb5cd 2%,#ffcca8 17%,#fff6b7 35%,#daffb7 55%,#aadeff 76%,#cebafc 97%);
     border-radius: 0px;
@@ -114,11 +115,6 @@
     border: 1px dotted #8f38ff;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #d6ecf3;
-    border: 1px dotted #8f38ff;
-    border-radius: 0px;
-}
 
 ::-webkit-scrollbar {
     background: -webkit-linear-gradient(top, #ffb5cd 2%,#ffcca8 17%,#fff6b7 35%,#daffb7 55%,#aadeff 76%,#cebafc 97%);
@@ -126,6 +122,8 @@
     width: 0px;
     border: 1px dotted #8f38ff;
 }
+/*/
+
 center {
     display: block;
     text-align: var(--webkitcenter);
@@ -145,6 +143,11 @@ img {
 @font-face {
     font-family: 'emoji';
     src: url(./fonts/EmojiFont.ttf)
+}
+ 
+@font-face {
+    font-family: 'rainyhearts';
+    src: url(./fonts/windows_command_prompt.ttf)
 }
 
 
@@ -176,6 +179,7 @@ body {
 
 .index {
     background: var(--bg);
+    
    
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
@@ -255,7 +259,7 @@ iframe,
 
 .stats {
     padding-left: 2px;
-    top: 20px;
+    top: 70px;
     left: 170px;
     width: 140px;
     height: 23px;
@@ -280,7 +284,7 @@ iframe,
 .side {
     align-items: center;
     line-height: 1px;
-    top: 30px;
+    top: 80px;
     left: 924px;
     width: 100px;
     height: 185px;
@@ -540,7 +544,7 @@ button:hover {
   }*/
 
  ::-webkit-scrollbar-thumb {
-    background: #ffd4d4;
+    background: #e1bcec;
     border: 1px dotted #8f38ff;
     border-radius: 0px;
 }
@@ -549,7 +553,6 @@ button:hover {
     background: #8f38ff;
     /* cursor:url(/emoticon/cursor_default.png), auto; */
 }
-
 
 
 @keyframes MoveUpDown {
@@ -609,6 +612,10 @@ button:hover {
 }
 .potd {
     left: 175px;
+    width: 650px;
+    height:70px;
+    margin-left: 135px;
+    margin-top: 12px;
 }
 .stats {
     left: 930px;
@@ -619,7 +626,7 @@ button:hover {
 }
 .me {
     left: 195px;
-    top: -730px;
+    top: -685px;
     width: 159px;
     height: 215px;
 }
@@ -708,9 +715,9 @@ button:hover {
 
 .contentContainer{
     width: 565px;
-    height: 535px;
+    height: 534px;
     position: relative;
-    top: -207px;
+    top: -166px;
     left: 357px;
     scrollbar-color: #8f38ff #be3435;
     scrollbar-width: thin;

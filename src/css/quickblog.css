@@ -76,3 +76,11 @@
     padding-bottom: 10px;
     animation: holi 2s ease 0s 1 normal forwards;
 }
+
+/*/     background: linear-gradient(90deg, rgba(255,213,208,1) 15%, rgba(252,255,196,1) 30%, rgba(199,255,196,1) 50%, rgba(196,255,251,1) 70%, rgba(248,215,255,1) 85%);
+background-color: #bdecff;
+border: dotted 1px;
+padding: 2px;
+padding: 3px;
+color: var(--marquee-color);
+/*/
