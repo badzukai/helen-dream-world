@@ -6,15 +6,22 @@ import "../css/home.css"
 import SobreMi from "./SobreMi"
 import { Route, Link, Switch } from "react-router-dom"
 import Content from "./Content"
-import Blog from "./Blog"
-import Jan2023 from "./Jan2023"
-import Dic2022 from "./Dic2022.jsx"
-import Dic27 from "./Dic27.jsx"
-import Jan09 from "./Jan09.jsx"
-import Jan13 from "./Jan13.jsx"
-import Jan18 from "./Jan18.jsx"
+import Blog from "./blog/Blog"
+import Quickblog from "./Quickblog"
+import Jan2023 from "./blog/Jan2023"
+import Feb2023 from "./blog/Feb2023"
+import Dic2022 from "./blog/Dic2022.jsx"
+import Dic27 from "./blog/Dic27.jsx"
+import Jan09 from "./blog/Jan09.jsx"
+import Jan13 from "./blog/Jan13.jsx"
+import Jan18 from "./blog/Jan18.jsx"
+import Feb08 from "./blog/Feb08"
+import Feb16 from "./blog/Feb16"
 import NotFound from "./NotFound.jsx"
 import InProgress from "./InProgress.jsx"
+import Music from "./Music.jsx"
+import { useState } from "react"
+
 
 export default function Home () {
     
@@ -22,7 +29,23 @@ export default function Home () {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
+
+    if (localStorage.getItem("theme") !== "light" && localStorage.getItem("theme") !== "dark") {
+        localStorage.setItem("theme", "light")
+    }
     
+    let [theme, setTheme] = useState(localStorage.getItem("theme"))
+    console.log(theme)
+
+    function changeTheme(){
+        if (theme === "light") {
+            localStorage.setItem("theme", "dark");
+        }else{
+            localStorage.setItem("theme", "light");
+        }
+        setTheme(localStorage.getItem("theme"))
+    }
+
     return(
     // <html>
     //     <head>
@@ -37,9 +60,8 @@ export default function Home () {
     //         </script>
     //     </head>
     /*/ https://webneko.net/?valentine /*/
-        <div className="index">
+        <div className={`index ${theme} `}>
           <div className="layout">
-    
           
             <div className="marquee"><marquee scrollamount="2"> <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16" height="16"/>. . . welcome to helen's dream world . . . disfrute su estadía! . . . &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; . . . esta página esta construida para verse en computadoras, si estas desde un celular no tendrás acceso a muchas funciones ... <img src="https://test.cinni.net/cinni/Dotmd.gif" width="16px"/></marquee></div> 
             
@@ -57,6 +79,7 @@ export default function Home () {
             <div className="side">
                 <center>
                         <img src="https://i2.glitter-graphics.org/pub/538/538172dqlxwnx868.gif" className="button"/>
+                        
                         <img src="https://i10.glitter-graphics.org/pub/223/223900lkyihutiz9.gif" className="button"/>
                         <img src="https://i3.glitter-graphics.org/pub/180/180793o6w0geqbip.gif" className="button"/>
                         <img src="https://dl5.glitter-graphics.net/pub/143/143975i590kaiky0.gif" className="button"/>
@@ -79,13 +102,18 @@ export default function Home () {
                 <Route exact path="/" render={() => <Content/>} />
                 <Route path={"/sobremi"} render={() => <SobreMi/>} />
                 <Route path={"/blog"} render={() => <Blog/>} />
+                <Route path={"/quickblog"} render={() => <Quickblog/>} />
                 <Route path={"/inprogress"} render={() => <InProgress/>} />
                 <Route path={"/jan2023"} render={() => <Jan2023/>} />
+                <Route path={"/feb2023"} render={() => <Feb2023/>} />
                 <Route path={"/dic2022"} render={() => <Dic2022/>} />
                 <Route path={"/dic27"} render={ () => <Dic27/>}/>
                 <Route path={"/jan09"} render={ () => <Jan09/>}/>
                 <Route path={"/jan13"} render={ () => <Jan13/>}/>
                 <Route path={"/jan18"} render={ () => <Jan18/>}/>
+                <Route path={"/feb08"} render={() => <Feb08/>}/>
+                <Route path={"/feb16"} render={() => <Feb16/>}/>
+                <Route path={"/music"} render={() => <Music/>}/>
                 <Route render={ () => <NotFound/>}/>
             </Switch>
             
@@ -132,7 +160,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td className="sidebar">
-                            <Link className="linkTag" to="/InProgress"> music </Link>
+                            <Link className="linkTag" to="/music"> music </Link>
                             </td>
                             </tr>
                             <tr>
@@ -148,7 +176,7 @@ export default function Home () {
                                 <img src="https://cinni.net/images/yys/blueheartbounce.gif"/>
                             </td>
                             <td className="sidebar">
-                            <Link className="linkTag" to="/InProgress"> quickblog </Link>
+                            <Link className="linkTag" to="/quickblog"> quickblog </Link>
                             </td>
                             </tr>
                             <tr>
@@ -255,7 +283,7 @@ export default function Home () {
                                     <img src="https://cinni.net/images/yys/purpleheartbounce.gif"/>
                                 </td>
                                 <td className="sidebar">
-                                <Link className="linkTag" to="/InProgress"> themes </Link>
+                                <button onClick={changeTheme} > cambiar tema </button>
                                 </td>
                             </tr>
                             
@@ -270,7 +298,6 @@ export default function Home () {
                 <div className="l5"></div>
                 <div className="l6"></div>
           </div>
-                  <div className="pagedoll"></div>
 
               <script src="https://99gifshop.neocities.org/theme-control.js"></script>
 

@@ -1,4 +1,4 @@
-import "../css/dic27.css"
+import "../../css/blogentries.css"
 import { Route, Link } from "react-router-dom"
 
 export default function dic27 () {
@@ -22,7 +22,7 @@ export default function dic27 () {
  <br />
                 </div><br />
                 <div className="dic27Linea">
-                podés ver este post en <a href="https://badzukai.bearblog.dev">mi bearblog</a> <br />
+                podés ver este post en <a href="https://badzukai.bearblog.dev" target="_blank">mi bearblog</a> <br />
                 </div> <br />
             </div>
            

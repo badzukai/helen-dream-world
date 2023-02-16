@@ -1,4 +1,4 @@
-import "../css/dic2022.css"
+import "../../css/dic2022.css"
 import { Route, Link } from "react-router-dom"
 
 export default function jan2023 () {

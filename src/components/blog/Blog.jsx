@@ -1,4 +1,4 @@
-import "../css/blog.css"
+import "../../css/blog.css"
 import { Route, Link } from "react-router-dom"
 
 
@@ -19,6 +19,10 @@ export default function Blog () {
                         <div className="blogAños">
                         <b> '*•.¸♡ ♡¸.•*' &nbsp; 2023 &nbsp; '*•.¸♡ ♡¸.•*'</b> <br /> <br />
                            
+                        </div>
+                        <div className="blogMeses">
+                        <img src="https://cinni.net/images/yys/purpleheartbounce.gif" /> 
+                        &nbsp;  <Link className="linkTag" to="/feb2023"> febrero </Link> <br /> <br /> 
                         </div>
                         <div className="blogMeses">
                         <img src="https://cinni.net/images/yys/purpleheartbounce.gif" /> 

@@ -54,6 +54,8 @@ export default function Content(){
 				<p className="lastUpdates"> 
 					<b> new updates: </b> <br />
 					♡ <a href="/sobreMi"> sobre mi subpage </a> <br />
+					♡ <a href="/blog"> blog subpage! </a> <br />
+					♡  dark mode! pueden activarlo en el sidebar abajo de todo <br />
 					</p>
 				<p className="lastUpdates">
 						<b>currently working on :  </b><br />

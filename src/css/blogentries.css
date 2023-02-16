@@ -2,7 +2,7 @@
     --Bfont-main: 'Chivo Mono', monospace;
     --Bfont-secondary:'Chivo Mono', monospace;
     --Bfont-scale: 1em;
-    --Bbackground-color: #432f46;
+    --Bbackground-color: #b7dbe2;
     --Btext-color: #ddd;
     --Blink-color: #8cc2dd;
     --Bvisited-color:  #8b6fcb;
@@ -53,7 +53,7 @@
     padding: 10px;
     border: 1px solid #B37DFE;
     margin-right: 7px;
-    background-color: #b7dbe2;
+    background-color: var(--Bbackground-color);
     
 }
 
@@ -101,3 +101,33 @@
     font-family: var(--Bfont-main);
       
 }
+
+:root .dark {
+--Bbackground: #432f46;
+--Btext: #ddd;
+--Bmain-bg:#432f46;
+--Bh1-bg:#6e45ff;
+--Bh3-bg:linear-gradient(90deg, rgba(110,69,255,1) 0%, rgba(67,47,70,0) 100%);
+--Btable-bg:#432f46;
+--Bthead:#5310ff;
+--Btbody:#4f3864;
+--Bnth:#432f46;
+--Btitle-bg:#432f46;
+--Bhighlight-bg:#6e45ff;
+--Bhighlight-color:#ddd;
+--Bnav-bg:#432f46;
+--Blink-color:#c786ff;
+--Blink-bg:#5310ff;
+  }
+
+:root .dark {
+    --Bbackground-color: #432f46;
+    --Bheading-color: #eee;
+    --Btext-color: #ddd;
+    --Blink-color: #8cc2dd;
+    --Bvisited-color:  #8b6fcb;
+    --Bcode-background-color: #000;
+    --Bcode-color: #ddd;
+    --Bblockquote-color: #ccc;
+}
+
