@@ -1,7 +1,13 @@
 import "../../css/blogentries.css"
 import { Route, Link } from "react-router-dom"
+import { useState } from "react";
+import axios from "axios"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Comments from "../Comments";
 
-export default function dic27 () {
+export default function Dic27 () {
+    
     return(
         <div className="contentContainer">
             <div className="dicBlogEntries">
@@ -25,6 +31,7 @@ export default function dic27 () {
                 podés ver este post en <a href="https://badzukai.bearblog.dev" target="_blank">mi bearblog</a> <br />
                 </div> <br />
             </div>
+            <Comments/>
            
         </div>
     )

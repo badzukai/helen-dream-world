@@ -1,9 +1,11 @@
 import "../../css/blogentries.css"
 import { Route, Link } from "react-router-dom"
+import Password from "../Password"
 
 export default function Feb16 () {
     return(
         <div className="contentContainer">
+            <Password/>
             <div className="dicBlogEntries">
                 <div className="dic27Titulo">
                 que carajo voy a hacer de mi vidaa <br />
