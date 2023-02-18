@@ -34,13 +34,14 @@ export default function Comments(){
     console.log([form.comment, location, form.name])
     console.log(comments)
 
-    async function submitComment(){
+    async function submitComment(e){
+        e.preventDefault()
         await axios.post("https://helen-dream-world-api.fly.dev/comments", {
             content : form.comment,
             publicationName: location,
             userName: form.name
         })
-        .then(r => console.log(r.json()))
+        await fetchData()
         setForm({
             comment: "",
             name: ""
@@ -50,7 +51,7 @@ export default function Comments(){
     return(
         <div>
             <div className="formulario">
-                    <form onSubmit={submitComment}>
+                    <form onSubmit={(e) => submitComment(e)}>
                         <input type="text" name="name" value={form.name} onChange={(e) => {handleChange(e)}} />
                         <textarea name="comment" value={form.comment} onChange={(e) => {handleChange(e)}}  cols="30" rows="10"></textarea>
                         <input type="submit" value={"Submit"} />
